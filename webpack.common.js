@@ -1,4 +1,3 @@
-const { clear } = require("console");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -37,7 +36,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: "My App Restaurant",
+            template: "src/index.html",
             inject: "body",
             favicon: "./src/img/favicon.png",
         }),
