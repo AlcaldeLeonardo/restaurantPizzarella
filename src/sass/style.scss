@@ -13,9 +13,10 @@ body {
     &__listItem {
         font-size: 1.5rem;
         margin: 1rem;
-    }
-    :hover {
-        cursor: pointer;
+        & span:hover {
+            color:#92caf1;
+            cursor: pointer;
+        }
     }
 }
 
