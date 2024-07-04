@@ -112,19 +112,19 @@ body {
         bottom: 0;
         left: 0;
 
+        &--base{
+            transform: translateZ(0);
+        }
+
         &--back{
             transform: translateZ(-2px) scale(4);
             background-image: url("../img/backgroundPizza.jpeg");
             background-size: cover;
             background-position-y: -650px;
-            
+
             &::before {
                 @include darkenElement(#00000050);
             }
-        }
-
-        &--base{
-            transform: translateZ(0);
         }
     }
 }
