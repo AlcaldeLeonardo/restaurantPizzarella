@@ -2,24 +2,33 @@ import { PizzarelaInfo } from "../pizzarella";
 import { homeImgDOM } from "./homeImgDOM";
 import { paragraphDOM } from "./paragraphDOM";
 import { titleDOM } from "./titleDOM";
+import imgPizzaURL from "../../img/antique-pizzeria.jpg"
 
 export function menuDOM(){
     const menuToShow = document.createElement(`div`);
     menuToShow.className = "container"
 
     menuToShow.appendChild(homeImgDOM("Italia on your Table", "Explore an authentic Italian menu with delicious pizzas, pastas, and desserts at our pizzeria. Enjoy traditional and gourmet flavors, accompanied by select beverages. Immerse yourself in a unique culinary experience that will transport you to Italy with every dish. Experience an unforgettable gastronomic journey with us!"))
-    menuToShow.appendChild(menuCardDOM())
+    menuToShow.appendChild(menuCardDOM());
 
     return menuToShow;
 }
 
 function menuCardDOM() {
     const menuCardToShow = document.createElement("div");
+    const foodSection = document.createElement(`div`)
+    foodSection.className = "foodMenu__foodSection"
+    const flexSection = document.createElement(`div`)
+    flexSection.className = "foodMenu__flexSection"
+    const imgPizza = document.createElement("img");
     const menuPizarrella = PizzarelaInfo.Menu;
+
     menuCardToShow.className = "card foodMenu";
+    imgPizza.src = imgPizzaURL;
 
 
     menuCardToShow.appendChild(titleDOM("Menu's Pizzas", "card__title title"));
+    menuCardToShow.appendChild(flexSection);
 
     menuPizarrella.forEach((item) => {
         let food = item.food;
@@ -35,7 +44,10 @@ function menuCardDOM() {
             paragraphDOM(`$${price}`, "foodAndPrice__price price")
         );
 
-        menuCardToShow.appendChild(foodAndPrice);
+        foodSection.appendChild(foodAndPrice);
+
+        flexSection.appendChild(foodSection);
+        flexSection.appendChild(imgPizza);
     });
 
     return menuCardToShow;

@@ -54,6 +54,7 @@ body {
         align-items: center;
         background-image: url(../img/pizza.jpeg);
         width: 100%;
+        height: 200px;
         padding: 2rem;
         background-size: cover;
         z-index: 0;
@@ -119,6 +120,20 @@ body {
 // Pizzarella's Menu Styles
 
 .foodMenu{
+    width: 80vw;
+
+    &__flexSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & img{
+            width: 400px;
+            height: 320px;
+        }
+    }
+    &__foodSection{
+        width: 400px;
+    }
     &__foodAndPrice{
         display: flex;
         margin: 1rem 1rem;
@@ -149,7 +164,7 @@ body {
         }
 
         &--back{
-            transform: translateZ(-2px) scale(4);
+            transform: translateZ(-2px) scale(5);
             background-image: url("../img/backgroundPizza.jpeg");
             background-size: cover;
             background-position-y: -650px;
