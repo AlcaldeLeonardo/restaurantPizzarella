@@ -17,11 +17,12 @@ export function menuDOM(){
 function menuCardDOM() {
     const menuCardToShow = document.createElement("div");
     const foodSection = document.createElement(`div`)
-    foodSection.className = "foodMenu__foodSection"
     const flexSection = document.createElement(`div`)
-    flexSection.className = "foodMenu__flexSection"
     const imgPizza = document.createElement("img");
     const menuPizarrella = PizzarelaInfo.Menu;
+    
+    foodSection.className = "foodMenu__foodSection"
+    flexSection.className = "foodMenu__flexSection"
 
     menuCardToShow.className = "card foodMenu";
     imgPizza.src = imgPizzaURL;
