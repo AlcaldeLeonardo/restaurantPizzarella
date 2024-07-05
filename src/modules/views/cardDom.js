@@ -1,13 +1,13 @@
 import { paragraphDOM } from "./paragraphDOM";
 import { titleDOM } from "./titleDOM";
 
-export function aboutDOM(aboutDescription){
+export function cardDOM(title, text){
     const about = document.createElement("div");
     about.className = "home__aboutUs aboutUs card";
 
     
-    about.appendChild(titleDOM("Let me tell you who we are!", "card__title title"))
-    about.appendChild(paragraphDOM(aboutDescription))
+    about.appendChild(titleDOM(title, "card__title title"))
+    about.appendChild(paragraphDOM(text, "card__paragraph paragraph"))
 
     return about;
 

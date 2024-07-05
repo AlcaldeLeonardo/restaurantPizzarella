@@ -1,20 +1,19 @@
 import { PizzarelaInfo } from "../pizzarella";
-import { aboutDOM } from "./aboutDom";
 import { hoursDOM } from "./hoursDOM";
 import { homeImgDOM } from "./homeImgDOM";
-import { locationDOM } from "./locationDom.js";
+import { cardDOM } from "./cardDom.js";
 
-export function renderHome(){
+export function Home(){
     const homeDOM = document.createElement(`div`);
     homeDOM.className = "home"
 
     homeDOM.appendChild(homeImgDOM());
 
-    homeDOM.appendChild(aboutDOM(PizzarelaInfo.About))
+    homeDOM.appendChild(cardDOM("Let me tell you who we are!", PizzarelaInfo.About))
 
     homeDOM.appendChild(hoursDOM(PizzarelaInfo.Hours))
 
-    homeDOM.appendChild(locationDOM(PizzarelaInfo.Location))
+    homeDOM.appendChild(cardDOM("Location", PizzarelaInfo.Location))
 
     return homeDOM;
 }
