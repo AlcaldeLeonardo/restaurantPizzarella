@@ -18,6 +18,30 @@ export class PizzarelaInfo {
     static #location =
         "You can locate Pizarrella pizzeria at 12 Via del Mare, in the charming coastal town of Portofino, Italy. A perfect location to enjoy delicious pizzas with views of the Mediterranean Sea!";
 
+    static #menu = [{
+        food: "Margarita",
+        price: 10,
+    },
+    {
+        food: "Pepperoni",
+        price: 12,
+    },
+    {
+        food: "Hawaiana",
+        price: 13,
+    },
+    {
+        food: "Four Chesse",
+        price: 14,
+    },
+    {
+        food: "Barbacoa",
+        price: 10,
+    },
+    {
+        food: "Calzone",
+        price: 14,
+    },]
     static get Name() {
         return this.#name;
     }
@@ -27,6 +51,10 @@ export class PizzarelaInfo {
     }
     static get About() {
         return this.#about;
+    }
+
+    static get Menu(){
+        return this.#menu;
     }
 
     static get Hours() {
