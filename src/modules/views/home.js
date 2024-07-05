@@ -5,9 +5,9 @@ import { cardDOM } from "./cardDom.js";
 
 export function Home(){
     const homeDOM = document.createElement(`div`);
-    homeDOM.className = "home"
+    homeDOM.className = "container home"
 
-    homeDOM.appendChild(homeImgDOM());
+    homeDOM.appendChild(homeImgDOM(PizzarelaInfo.Name, PizzarelaInfo.Description));
 
     homeDOM.appendChild(cardDOM("Let me tell you who we are!", PizzarelaInfo.About))
 

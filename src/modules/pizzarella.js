@@ -35,12 +35,22 @@ export class PizzarelaInfo {
         price: 14,
     },
     {
-        food: "Barbacoa",
+        food: "BBQ",
         price: 10,
     },
     {
         food: "Calzone",
         price: 14,
+    },{
+        food: "Chicken BBQ",
+        price: 16,
+    },
+    {
+        food: "Vegetarian",
+        price: 11,
+    },{
+        food: "Ham and Mushroom",
+        price: 12,
     },]
     static get Name() {
         return this.#name;

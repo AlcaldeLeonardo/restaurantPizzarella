@@ -1,12 +1,11 @@
-import { PizzarelaInfo } from "../pizzarella";
 import { paragraphDOM } from "./paragraphDOM";
 import { titleDOM } from "./titleDOM";
 
-export function homeImgDOM(){
+export function homeImgDOM(title, description){
     const img = document.createElement(`div`);
     img.className = "home__img img"
 
-    img.appendChild(imgTextDOM(PizzarelaInfo.Name, PizzarelaInfo.Description))
+    img.appendChild(imgTextDOM(title, description))
 
     return img
 }
