@@ -1,11 +1,17 @@
 import './css/reset.css'
-import { PizzarelaInfo } from './modules/pizzarella';
-import { renderHome } from './modules/views/home';
 import './sass/style.scss'
+import { Home } from './modules/views/home';
+import { render } from './modules/views/render';
 
-console.log("hola");
-console.log(PizzarelaInfo.Hours);
+render(Home());
 
-const root = document.querySelector(`#content`)
+document.querySelector("#btnHome").addEventListener("click", () =>{
+    render(Home());
+})
+document.querySelector("#btnMenu").addEventListener("click", () =>{
+    render();
+})
+document.querySelector("#btnContact").addEventListener("click", () =>{
+    render();
+})
 
-root.appendChild(renderHome())
