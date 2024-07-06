@@ -6,7 +6,7 @@ import imgPizzaURL from "../../img/antique-pizzeria.jpg"
 
 export function menuDOM(){
     const menuToShow = document.createElement(`div`);
-    menuToShow.className = "container"
+    menuToShow.className = "container Menu"
 
     menuToShow.appendChild(homeImgDOM("Italia on your Table", "Explore an authentic Italian menu with delicious pizzas, pastas, and desserts at our pizzeria. Enjoy traditional and gourmet flavors, accompanied by select beverages. Immerse yourself in a unique culinary experience that will transport you to Italy with every dish. Experience an unforgettable gastronomic journey with us!"))
     menuToShow.appendChild(menuCardDOM());
