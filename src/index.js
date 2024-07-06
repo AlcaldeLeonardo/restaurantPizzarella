@@ -5,7 +5,7 @@ import { render } from './modules/views/render';
 import { menuDOM } from './modules/views/menuDOM';
 import { contactDOM } from './modules/views/contactDOM';
 
-render(menuDOM());
+render(Home());
 
 document.querySelector("#btnHome").addEventListener("click", () =>{
     render(Home());
