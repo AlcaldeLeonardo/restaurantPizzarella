@@ -26,6 +26,12 @@ This is a small website on webpack. Tihis is a exercise proposed by Odin Proyect
     
 3. Open the projetc directory in your preferred editor.
 
+4. Install the dependencies
+  ```bash
+    npm install
+   ```
+5. For more available scripts consult the package.JSON file
+
 ## Use of Git and GitHub
 This project uses Git for version control and GitHub to host the repository. Some of the best practices followed include:
 - Frequent and descriptive commits
